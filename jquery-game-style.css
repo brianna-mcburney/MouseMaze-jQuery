@@ -1,0 +1,285 @@
+body {
+	background: url("images/mazeBackground.png");
+	background-size: cover;
+	color: #ffffff;
+	font-family: Papyrus, fantasy;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+div.all {
+	background: rgba(255,255,255,0.8);
+	padding: 20px 20px 20px 20px;
+	position: relative;
+	border-radius: 10px;
+	display: inline-block;
+	text-align: center;
+	font-family: Papyrus, fantasy;
+	color: #000066;
+	font-weight: bold;
+}
+#container {
+	background:url("images/grassBackground.jpg");
+	background-size: cover;
+	position: relative;
+	display: inline-block;
+	margin-top: 10px;
+	width: 600px;
+	height: 600px;
+}
+#moveMe {
+	position: absolute;
+	top:435px;
+	left:140px;
+	padding: 0px;
+	margin: 0xp;
+}
+.up {
+	width: 30px;
+	height: 30px;
+	background: url("images/Sprite_Mouse-Up2.png");
+	display: inline-block;
+	background-position-x: 0px;
+	animation: walk-up 0.5s steps(4) infinite;
+}
+.down {
+	width: 30px;
+	height: 30px;
+	background: url("images/Sprite_Mouse-Down2.png");
+	display: inline-block;
+	background-position-x: 0px;
+	animation: walk-down 0.5s steps(4) infinite;
+}
+.left {
+	width: 40px;
+	height: 28px;
+	background: url("images/Sprite_Mouse-Left2.png");
+	display: inline-block;
+	background-position-x: 0px;
+	animation: walk-left 0.5s steps(4) infinite;
+}
+.right {
+	width: 40px;
+	height: 28px;
+	background: url("images/Sprite_Mouse-Right2.png");
+	display: inline-block;
+	background-position-x: 0px;
+	animation: walk-right 0.5s steps(4) infinite;
+}
+@keyframes walk-down {
+	background-position-y: 0px;
+	from { background-position-x: 0px;}
+	to { background-position-x: -125px; }
+}
+@keyframes walk-left {
+	background-position-y: 48px;
+	from { background-position-x: 0px;}
+	to { background-position-x: -173px; }
+}
+@keyframes walk-right {
+	background-position-y: 96px;
+	from { background-position-x: 0px;}
+	to { background-position-x: -173px; }
+}
+@keyframes walk-up {
+	background-position-y: 144px;
+	from { background-position-x: 0px;}
+	to { background-position-x: -123px; }
+}
+#reset {
+	position: absolute;
+	top: 20px;
+	left: 200px;
+	z-index: 1;
+}
+#wasd {
+	background: url("images/wasd-gaming.png");
+	background-size: 100px;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 5px;
+	left: 350px;
+}
+#cheese {
+	background: url("images/cheese.png");
+	background-size: 30px;
+	width: 30px;
+	height: 25px;
+	position: absolute;
+	top: 100px;
+	left: 150px;
+}
+.bordercolor {
+	background: #000;
+}
+#border1{
+	position: absolute;
+	top: 120px;
+	left: 118px;
+	height: 366px;
+	width: 6px;
+}
+#border2{
+	position: absolute;
+	top: 120px;
+	left: 478px;
+	height: 366px;
+	width: 6px;
+}
+#border3{
+	position: absolute;
+	top: 482px;
+	left: 118px;
+	height: 6px;
+	width: 366px;
+}
+#border4{
+	position: absolute;
+	top: 120px;
+	left: 208px;
+	height: 6px;
+	width: 270px;
+}
+#border5{
+	position: absolute;
+	top: 120px;
+	left: 208px;
+	height: 97px;
+	width: 6px;
+}
+#border6{
+	position: absolute;
+	top: 394px;
+	left: 208px;
+	height: 94px;
+	width: 6px;
+}
+#border7{
+	position: absolute;
+	top: 210px;
+	left: 297px;
+	height: 187px;
+	width: 6px;
+}
+#border8{
+	position: absolute;
+	top: 210px;
+	left: 297px;
+	height: 6px;
+	width: 98px;
+}
+#border9{
+	position: absolute;
+	top: 391px;
+	left: 297px;
+	height: 6px;
+	width: 95px;
+}
+#border10{
+	position: absolute;
+	top: 300px;
+	left: 390px;
+	height: 6px;
+	width: 90px;
+}
+#border11{
+	position: absolute;
+	top: 300px;
+	left: 120px;
+	height: 6px;
+	width: 180px;
+}
+#finish {
+	position: absolute;
+	top: 120px;
+	left: 118px;
+	height: 6px;
+	width: 90px;
+}
+.heart  {
+	position: absolute;
+	background: url("images/LifeHeart.png");
+	background-size: 40px 40px;
+	width: 40px;
+	height: 40px;
+}
+#heart1{
+	position: absolute;
+	top: 540px;
+	left: 540px;
+}
+#heart2{
+	position: absolute;
+	top: 540px;
+	left: 500px;
+}
+#heart3{
+	position: absolute;
+	top: 540px;
+	left: 460px;
+}
+#heart4{
+	position: absolute;
+	top: 540px;
+	left: 420px;
+}
+#heart5{
+	position: absolute;
+	top: 540px;
+	left: 380px;
+}
+#zap {
+	position: absolute;
+	background: url("images/zapIcon.png");
+	background-size: 40px 40px;
+	width: 40px;
+	height: 40px;
+}
+#gameOver {
+	background: #ff0000;
+	border: 1px solide #000;
+	display: inline-block;
+	padding: 10px;
+	position: absolute;
+	top: 210px;
+	left: 170px;
+	width: 257px;
+}
+#youWin {
+	background: url("images/youWin.jpg");
+	background-size: 257px 200px;
+	border: 1px solid #000;
+	display: inline-block;
+	padding: 10px;
+	position: absolute;
+	top: 210px;
+	left: 170px;
+	width: 257px;
+	height: 200px
+}
+.btn {
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 22px;
+	text-decoration: none;
+	color: #000;
+	position: relative;
+	display: inline-block;
+	margin: 10px;
+}
+.btn:active {
+	transform: translate(0px, 5px);
+	-webkit-transform: translate(0px, 5px);
+	box-shadow: 0px 1px 0px 0px;
+}
+.blue {
+	background-color: #55acee;
+	box-shadow: 0px 5px 0px 0px #3C93D5;
+}
+.blue:hover {
+	background-color: #6FC6FF;
+}
